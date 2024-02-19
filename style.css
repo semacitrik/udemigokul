@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ortak alan */
+.align-section {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.align-item {
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  margin-bottom: 40px;
+}
+
+header {
+  background-color: antiquewhite;
+  min-height: 100vh;
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)),
+    url(images/bg.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+
+  position: relative;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+.nav-links ul li a::after {
+  content: "";
+  background-color: rgb(193, 45, 72);
+  width: 0;
+  display: block;
+  margin-top: 4px;
+  height: 1.5px;
+}
+.nav-links ul li a:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
+.bi-list {
+  color: rgb(193, 45, 72);
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.bi-list:hover {
+  transform: scale(1.1);
+}
+/* text alani */
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 60px;
+}
+.text-box p {
+  margin: 10px 40px;
+  font-size: 15px;
+  color: white;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border-color: rgb(193, 45, 72);
+  background-color: rgb(193, 45, 72);
+  transition: 0.4s;
+}
+
+/* courses */
+
+section h1 {
+  font-size: 35px;
+}
+section p {
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+}
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  background-color: #f2d3d7;
+  padding: 20px 10px;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 10px rgba(5, 10, 30, 0.7);
+  transition: 0.3s;
+}
+section div div h3 {
+  margin: 10px 0;
+}
+/* KAMPUS */
+
+.campus-col {
+  background-color: #f2d3d7;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+.layer h3 {
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
+}
+.layer:hover h3 {
+  bottom: 40%;
+  transition: 0.3s;
+  opacity: 1;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layer:hover {
+  background-color: rgba(90, 22, 37, 0.5);
+}
+
+/* birimler */
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col {
+  text-align: left;
+}
+
+/* YORUMLAR */
+
+.testemonials-col {
+  background-color: #f2d3d7;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px;
+  
+}
+.testemonials-col img {
+  height: 50px;
+  margin: 10px 30px;
+  border-radius: 50%;
+}
+.testemonials-col div p{
+  background-color: #f1ced2;
+  padding: 0;
+ 
+}
+.testemonials-col div h2{
+  margin-top: 10px;
+}
+
+.testemonials-col div .bi{
+  color: rgb(112, 23, 23);
+}
+
+/* hizli ulasim */
+.au{
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)),
+      url(images/london.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  border-radius: 10px;
+  margin-top: 100px;
+ 
+}
+.au h1{
+  color:white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+/* footer alani */
+
+.footer{
+  
+  margin-top: 50px !important;
+  margin-bottom: 100px !important;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+footer h2{
+  margin: 25px 0;
+}
+
+.icons .bi{
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  
+}
+
+footer div{
+  padding: 10px ;
+}
+.bi-heart-fill{
+  color: red;
+  margin: 10px;
+}
+.bi-linkedin {
+ color: blue !important;
+}
+.bi-facebook{
+  color: rgb(105, 105, 205) !important;
+ }
+ .bi-instagram {
+  color: rgb(219, 48, 170) !important;
+ }
+ 
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .text-box h1 {
+    font-size: 35px;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+  .au h1{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bi-list {
+    display: none;
+  }
+}
